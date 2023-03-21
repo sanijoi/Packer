@@ -1,0 +1,17 @@
+---
+- name: update all packages 
+  hosts: all
+  tasks:
+    - name: update packages
+      yum:
+        name: '*'
+        state: latest 
+
+    - name: install vim, tree, wget, 
+      yum:
+        name: 
+          - vim
+          - tree
+          - wget
+
+        state: latest
