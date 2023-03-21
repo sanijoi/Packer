@@ -24,6 +24,6 @@ build {
     ]
 
     provisioner "ansible" {
-        script = "./iman.yml"
+      playbook_file = "./iman.yml"
     }
 }
