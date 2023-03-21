@@ -8,7 +8,7 @@ packer {
 }
 
 source "amazon-ebs" "test" {
-    ami_name          = "Test instance"
+    ami_name          = "iman test"
     source_ami        = "ami-02f3f602d23f1659d"
     instance_type     = "t2.micro"
     region            = "us-east-1"
