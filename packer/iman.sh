@@ -1,3 +1,3 @@
 #!/bin/bash
-sudo apt install tree -y
+sudo yum install tree -y
 echo "Hello world" > iman
