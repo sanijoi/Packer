@@ -19,7 +19,7 @@ pipeline {
     post {
         always {
             echo "### CLEARNING WORKSPACE ###"
-            cleaWs()
+            cleanWs()
         }
     }
 }
