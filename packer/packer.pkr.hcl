@@ -23,7 +23,7 @@ build {
         "source.amazon-ebs.test"
     ]
 
-    provisioner "script" {
+    provisioner "shell" {
       script = "./iman.sh"
     }
 }
