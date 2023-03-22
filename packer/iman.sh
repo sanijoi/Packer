@@ -2,9 +2,7 @@
 
 sleep 30
 
-sudo cd /etc/yum.repos.d/
-sed -i 's/mirrorlist/#mirrorlist/g' /etc/yum.repos.d/CentOS-*
-sed -i 's|#baseurl=http://mirror.centos.org|baseurl=http://vault.centos.org|g' /etc/yum.repos.d/CentOS-*
+curl http://169.254.169.254/latest/meta-data/
 
 sudo yum update -y
 sudo yum install httpd -y
