@@ -23,7 +23,7 @@ build {
         "source.amazon-ebs.test"
     ]
 
-    provisioner "ansible" {
-      playbook_file = "./iman.yml"
+    provisioner "script" {
+      script = "./iman.sh"
     }
 }
