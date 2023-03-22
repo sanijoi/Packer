@@ -9,7 +9,7 @@ packer {
 
 source "amazon-ebs" "test" {
     ami_name          = "iman test"
-    source_ami        = "ami-09cd747c78a9add63"
+    source_ami        = "ami-0557a15b87f6559cf"
     instance_type     = "t2.micro"
     region            = "us-east-1"
     ssh_username      = "ubuntu"
